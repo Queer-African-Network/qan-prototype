@@ -5,8 +5,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/qan-prototype/",
+  "start_url": "/qan-prototype/",
   "description": "Come ki with the gays!",
   "icons": [
     {
