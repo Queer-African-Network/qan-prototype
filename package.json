@@ -15,6 +15,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "serve --config serve.json"
+  },
+  "dependencies": {
+    "serve": "^14.2.5"
   }
 }
