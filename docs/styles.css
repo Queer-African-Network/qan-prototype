@@ -23,8 +23,8 @@
     left: 0;
     right: 0;
     z-index: 50;
-    padding-bottom: 0;
-    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding: 10px 0;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0));
 }
 
 @media (min-width: 480px) {
