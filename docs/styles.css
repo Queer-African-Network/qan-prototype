@@ -38,6 +38,16 @@
   padding-bottom: 80px;
 }
 
+/* iOS PWA safe area: add bottom inset only when installed as a PWA */
+@media (display-mode: standalone) {
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pb-nav {
+    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+
 /* Line-clamp utility for card snippets */
 .line-clamp-2 {
   display: -webkit-box;
