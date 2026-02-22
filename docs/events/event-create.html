@@ -1,141 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QAN — Create Event</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles.css" />
-</head>
-<body class="bg-gray-100 flex justify-center">
-  <div class="phone-shell bg-white">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QAN — Create Event</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body class="bg-gray-100 flex justify-center">
+        <div class="phone-shell bg-white">
+            <!-- Header -->
+            <header
+                class="sticky top-0 bg-white border-b border-gray-200 flex items-center gap-3 px-4 h-14 z-40"
+            >
+                <a href="../groups/group-events.html" class="text-gray-500">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5 8.25 12l7.5-7.5"
+                        />
+                    </svg>
+                </a>
+                <span class="text-base font-semibold text-gray-900 flex-1"
+                    >Create Event</span
+                >
+            </header>
 
-    <!-- Header -->
-    <header class="sticky top-0 bg-white border-b border-gray-200 flex items-center gap-3 px-4 h-14 z-40">
-      <a href="../groups/group-events.html" class="text-gray-500">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-        </svg>
-      </a>
-      <span class="text-base font-semibold text-gray-900 flex-1">Create Event</span>
-    </header>
+            <main class="pb-nav px-4 py-5">
+                <form class="space-y-5" onsubmit="return false;">
+                    <!-- Event title -->
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-gray-700 mb-1.5"
+                            >Event title
+                            <span class="text-red-500">*</span></label
+                        >
+                        <input
+                            type="text"
+                            placeholder="What's the event called?"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        />
+                    </div>
 
-    <main class="pb-nav px-4 py-5">
+                    <!-- Date and time -->
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-gray-700 mb-1.5"
+                            >Date &amp; time
+                            <span class="text-red-500">*</span></label
+                        >
+                        <div class="flex gap-2">
+                            <input
+                                type="date"
+                                class="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            />
+                            <input
+                                type="time"
+                                class="w-32 border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            />
+                        </div>
+                    </div>
 
-      <form class="space-y-5" onsubmit="return false;">
+                    <!-- Location -->
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-gray-700 mb-1.5"
+                            >Location <span class="text-red-500">*</span></label
+                        >
+                        <input
+                            type="text"
+                            placeholder="Venue name, address, or 'TBD'"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        />
+                    </div>
 
-        <!-- Event title -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1.5">Event title <span class="text-red-500">*</span></label>
-          <input
-            type="text"
-            placeholder="What's the event called?"
-            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-          />
-        </div>
+                    <!-- Description -->
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-gray-700 mb-1.5"
+                            >Description
+                            <span class="text-gray-400 font-normal"
+                                >(optional)</span
+                            ></label
+                        >
+                        <textarea
+                            rows="3"
+                            placeholder="A few sentences about what to expect…"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
+                        ></textarea>
+                    </div>
 
-        <!-- Date and time -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1.5">Date &amp; time <span class="text-red-500">*</span></label>
-          <div class="flex gap-2">
-            <input
-              type="date"
-              class="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-            />
-            <input
-              type="time"
-              class="w-32 border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-            />
-          </div>
-        </div>
+                    <!-- Group context indicator -->
+                    <div
+                        class="flex items-center gap-2 rounded-xl bg-orange-50 border border-orange-100 px-4 py-3"
+                    >
+                        <div
+                            class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-xs font-semibold text-orange-700 flex-shrink-0"
+                        >
+                            TR
+                        </div>
+                        <div>
+                            <p class="text-xs font-medium text-gray-700">
+                                PDX Trail Runners
+                            </p>
+                            <p class="text-xs text-gray-500">
+                                This event will be visible to group members only
+                            </p>
+                        </div>
+                    </div>
 
-        <!-- Location -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1.5">Location <span class="text-red-500">*</span></label>
-          <input
-            type="text"
-            placeholder="Venue name, address, or 'TBD'"
-            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-          />
-        </div>
+                    <!-- Host display (auto-filled) -->
+                    <div
+                        class="flex items-center gap-2 rounded-xl bg-gray-50 border border-gray-200 px-4 py-3"
+                    >
+                        <div
+                            class="w-6 h-6 rounded-full bg-indigo-200 flex items-center justify-center text-xs font-semibold text-indigo-700 flex-shrink-0"
+                        >
+                            JR
+                        </div>
+                        <div>
+                            <p class="text-xs font-medium text-gray-700">
+                                Jordan Rivera
+                            </p>
+                            <p class="text-xs text-gray-500">
+                                Shown as host · @jordanr
+                            </p>
+                        </div>
+                    </div>
 
-        <!-- Description -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1.5">Description <span class="text-gray-400 font-normal">(optional)</span></label>
-          <textarea
-            rows="3"
-            placeholder="A few sentences about what to expect…"
-            class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
-          ></textarea>
-        </div>
+                    <!-- Submit button (disabled — wireframe) -->
+                    <button
+                        type="submit"
+                        disabled
+                        class="w-full bg-indigo-600 text-white font-semibold text-sm py-3.5 rounded-xl opacity-40 cursor-not-allowed"
+                    >
+                        Create Event
+                    </button>
 
-        <!-- Group context indicator -->
-        <div class="flex items-center gap-2 rounded-xl bg-orange-50 border border-orange-100 px-4 py-3">
-          <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-xs font-semibold text-orange-700 flex-shrink-0">TR</div>
-          <div>
-            <p class="text-xs font-medium text-gray-700">PDX Trail Runners</p>
-            <p class="text-xs text-gray-500">This event will be visible to group members only</p>
-          </div>
-        </div>
+                    <p class="text-center text-xs text-gray-400">
+                        Fill in all required fields to continue
+                    </p>
+                </form>
+            </main>
 
-        <!-- Host display (auto-filled) -->
-        <div class="flex items-center gap-2 rounded-xl bg-gray-50 border border-gray-200 px-4 py-3">
-          <div class="w-6 h-6 rounded-full bg-indigo-200 flex items-center justify-center text-xs font-semibold text-indigo-700 flex-shrink-0">JR</div>
-          <div>
-            <p class="text-xs font-medium text-gray-700">Jordan Rivera</p>
-            <p class="text-xs text-gray-500">Shown as host · @jordanr</p>
-          </div>
-        </div>
-
-        <!-- Submit button (disabled — wireframe) -->
-        <button
-          type="submit"
-          disabled
-          class="w-full bg-indigo-600 text-white font-semibold text-sm py-3.5 rounded-xl opacity-40 cursor-not-allowed"
-        >
-          Create Event
-        </button>
-
-        <p class="text-center text-xs text-gray-400">Fill in all required fields to continue</p>
-
-      </form>
-
-    </main>
-
-    <!-- Bottom Nav -->
-    <nav class="bottom-nav bg-white border-t border-gray-200 flex justify-around items-center h-16">
-      <a href="../index.html" class="flex flex-col items-center gap-0.5 text-gray-400">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-        </svg>
-        <span class="text-xs">Home</span>
-      </a>
-      <a href="../discover.html" class="flex flex-col items-center gap-0.5 text-gray-400">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-        </svg>
-        <span class="text-xs">Discover</span>
-      </a>
-      <a href="../groups/index.html" class="flex flex-col items-center gap-0.5 text-indigo-600">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-        </svg>
-        <span class="text-xs font-medium">Groups</span>
-      </a>
-      <a href="#" class="flex flex-col items-center gap-0.5 text-gray-400 opacity-40">
+            <!-- Bottom Nav -->
+            <nav
+                class="bottom-nav bg-white border-t border-gray-200 flex justify-around items-center h-16"
+            >
+                <a
+                    href="../index.html"
+                    class="flex flex-col items-center gap-0.5 text-gray-400"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        />
+                    </svg>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a
+                    href="../discover.html"
+                    class="flex flex-col items-center gap-0.5 text-gray-400"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                    </svg>
+                    <span class="text-xs">Discover</span>
+                </a>
+                <a
+                    href="../groups/index.html"
+                    class="flex flex-col items-center gap-0.5 text-indigo-600"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                        />
+                    </svg>
+                    <span class="text-xs font-medium">Groups</span>
+                </a>
+                <!--<a href="#" class="flex flex-col items-center gap-0.5 text-gray-400 opacity-40">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
         </svg>
         <span class="text-xs">Alerts</span>
-      </a>
-      <a href="../profile/own-profile.html" class="flex flex-col items-center gap-0.5 text-gray-400">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        </svg>
-        <span class="text-xs">Profile</span>
-      </a>
-    </nav>
-
-  </div>
-</body>
+      </a>-->
+                <a
+                    href="../profile/own-profile.html"
+                    class="flex flex-col items-center gap-0.5 text-gray-400"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                    </svg>
+                    <span class="text-xs">Profile</span>
+                </a>
+            </nav>
+        </div>
+    </body>
 </html>
