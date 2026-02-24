@@ -36,7 +36,7 @@
                     class="text-base font-semibold text-gray-900 flex-1 truncate"
                     >Nairobi Hikers</span
                 >
-                <a href="group-events.html" class="text-indigo-600">
+                <!--<a href="group-events.html" class="text-indigo-600">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -51,7 +51,7 @@
                             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                         />
                     </svg>
-                </a>
+                </a>-->
             </header>
 
             <main class="pb-nav">
@@ -124,81 +124,53 @@
 
                 <!-- Thread list preview -->
                 <div class="px-4 py-3 space-y-3">
-                    <!-- New thread button -->
-                    <a
-                        href="#"
-                        class="flex items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-3 text-sm text-gray-400"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-4 h-4"
+                    <!-- Action buttons -->
+                    <div class="flex gap-2">
+                        <!-- New thread button -->
+                        <a
+                            href="#"
+                            class="flex-1 flex items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-3 text-sm text-gray-400"
                         >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M12 4.5v15m7.5-7.5h-15"
-                            />
-                        </svg>
-                        Start a new thread
-                    </a>
-
-                    <!-- Thread 3: Waterproof trail shoes -->
-                    <a href="thread-detail.html" class="block">
-                        <div
-                            class="rounded-xl border border-gray-200 bg-white p-4"
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-4 h-4 flex-shrink-0"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 4.5v15m7.5-7.5h-15"
+                                />
+                            </svg>
+                            New thread
+                        </a>
+                        <!-- Create event button -->
+                        <a
+                            href="../events/event-create.html"
+                            class="flex-1 flex items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-3 text-sm text-gray-400"
                         >
-                            <div
-                                class="flex items-start justify-between gap-2 mb-1.5"
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-4 h-4 flex-shrink-0"
                             >
-                                <div class="flex items-center gap-1.5">
-                                    <div
-                                        class="w-6 h-6 rounded-full bg-sky-100 flex items-center justify-center text-xs font-semibold text-sky-700"
-                                    >
-                                        GP
-                                    </div>
-                                    <span class="text-xs text-gray-500"
-                                        >@hikergeo</span
-                                    >
-                                </div>
-                                <span class="text-xs text-gray-400"
-                                    >1d ago</span
-                                >
-                            </div>
-                            <p class="font-medium text-gray-900 text-sm mb-1">
-                                Recommended waterproof trail shoes?
-                            </p>
-                            <p class="text-xs text-gray-500 line-clamp-2 mb-2">
-                                Heading into the wet season and my current shoes
-                                are giving up on me. Looking for recs from folks
-                                who actually run in Nairobi County conditions...
-                            </p>
-                            <div
-                                class="flex items-center gap-1 text-xs text-gray-400"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-3.5 h-3.5"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.671 1.09-.085 2.17-.207 3.238-.364 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
-                                    />
-                                </svg>
-                                11 replies
-                            </div>
-                        </div>
-                    </a>
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                />
+                            </svg>
+                            Create event
+                        </a>
+                    </div>
 
-                    <!-- Thread 1: Recovery foods -->
+                    <!-- Thread 1: Recovery foods — 2h ago -->
                     <a href="thread-detail.html" class="block">
                         <div
                             class="rounded-xl border border-gray-200 bg-white p-4"
@@ -251,7 +223,130 @@
                         </div>
                     </a>
 
-                    <!-- Thread 4: Wildwood recap -->
+                    <!-- Event: Trail Run Saturday — 3h ago -->
+                    <a href="../events/event-detail.html" class="block">
+                        <div
+                            class="rounded-xl border border-gray-200 bg-white p-4"
+                        >
+                            <div class="flex items-center gap-2 mb-2">
+                                <span
+                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-600 text-white"
+                                    >EVENT</span
+                                >
+                                <span class="ml-auto text-xs text-gray-400"
+                                    >Sat, Feb 28</span
+                                >
+                            </div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">
+                                Trail Run Saturday
+                            </p>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-1"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5 flex-shrink-0"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                    />
+                                </svg>
+                                7:00 AM
+                            </div>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-2"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5 flex-shrink-0"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                    />
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                                    />
+                                </svg>
+                                Forest Park Trailhead, Nairobi
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <span
+                                    class="inline-block w-2 h-2 rounded-full bg-green-500"
+                                ></span>
+                                <span class="text-xs text-gray-500"
+                                    >14 going</span
+                                >
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Thread 2: Chanterelles — 5h ago -->
+                    <a href="thread-detail.html" class="block">
+                        <div
+                            class="rounded-xl border border-gray-200 bg-white p-4"
+                        >
+                            <div
+                                class="flex items-start justify-between gap-2 mb-1.5"
+                            >
+                                <div class="flex items-center gap-1.5">
+                                    <div
+                                        class="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center text-xs font-semibold text-teal-700"
+                                    >
+                                        LC
+                                    </div>
+                                    <span class="text-xs text-gray-500"
+                                        >@mycomax</span
+                                    >
+                                </div>
+                                <span class="text-xs text-gray-400"
+                                    >5h ago</span
+                                >
+                            </div>
+                            <p class="font-medium text-gray-900 text-sm mb-1">
+                                Anyone found chanterelles yet this season?
+                            </p>
+                            <p class="text-xs text-gray-500 line-clamp-2 mb-2">
+                                Went out to the coast last weekend and spotted
+                                some golden beauties coming up near the alders.
+                                Still early but hopeful.
+                            </p>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-400"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.671 1.09-.085 2.17-.207 3.238-.364 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                                    />
+                                </svg>
+                                4 replies
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Thread 4: Wildwood recap — 1d ago -->
                     <a href="thread-detail.html" class="block">
                         <div
                             class="rounded-xl border border-gray-200 bg-white p-4"
@@ -303,7 +398,7 @@
                         </div>
                     </a>
 
-                    <!-- Thread 2: Chanterelles -->
+                    <!-- Thread 3: Waterproof trail shoes — 1d ago -->
                     <a href="thread-detail.html" class="block">
                         <div
                             class="rounded-xl border border-gray-200 bg-white p-4"
@@ -313,25 +408,25 @@
                             >
                                 <div class="flex items-center gap-1.5">
                                     <div
-                                        class="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center text-xs font-semibold text-teal-700"
+                                        class="w-6 h-6 rounded-full bg-sky-100 flex items-center justify-center text-xs font-semibold text-sky-700"
                                     >
-                                        LC
+                                        GP
                                     </div>
                                     <span class="text-xs text-gray-500"
-                                        >@mycomax</span
+                                        >@hikergeo</span
                                     >
                                 </div>
                                 <span class="text-xs text-gray-400"
-                                    >5h ago</span
+                                    >1d ago</span
                                 >
                             </div>
                             <p class="font-medium text-gray-900 text-sm mb-1">
-                                Anyone found chanterelles yet this season?
+                                Recommended waterproof trail shoes?
                             </p>
                             <p class="text-xs text-gray-500 line-clamp-2 mb-2">
-                                Went out to the coast last weekend and spotted
-                                some golden beauties coming up near the alders.
-                                Still early but hopeful.
+                                Heading into the wet season and my current shoes
+                                are giving up on me. Looking for recs from folks
+                                who actually run in Nairobi County conditions...
                             </p>
                             <div
                                 class="flex items-center gap-1 text-xs text-gray-400"
@@ -350,7 +445,78 @@
                                         d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.671 1.09-.085 2.17-.207 3.238-.364 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
                                     />
                                 </svg>
-                                4 replies
+                                11 replies
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Event: Mt. Hood Day Hike — 2d ago -->
+                    <a href="../events/event-detail.html" class="block">
+                        <div
+                            class="rounded-xl border border-gray-200 bg-white p-4"
+                        >
+                            <div class="flex items-center gap-2 mb-2">
+                                <span
+                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-600 text-white"
+                                    >EVENT</span
+                                >
+                                <span class="ml-auto text-xs text-gray-400"
+                                    >Sat, Mar 8</span
+                                >
+                            </div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">
+                                Mt. Hood Day Hike
+                            </p>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-1"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5 flex-shrink-0"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                    />
+                                </svg>
+                                6:30 AM
+                            </div>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-2"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5 flex-shrink-0"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                    />
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                                    />
+                                </svg>
+                                Timberline Lodge Parking Lot
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <span
+                                    class="inline-block w-2 h-2 rounded-full bg-green-500"
+                                ></span>
+                                <span class="text-xs text-gray-500"
+                                    >22 going</span
+                                >
                             </div>
                         </div>
                     </a>
