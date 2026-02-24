@@ -6,49 +6,28 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
-        <title>QAN — Events</title>
+        <title>QAN — Notifications</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="manifest.json" />
     </head>
     <body class="bg-gray-100 flex justify-center">
         <div class="phone-shell bg-white">
             <!-- Header -->
             <header
-                class="sticky top-0 bg-white border-b border-gray-200 flex items-center px-4 h-14 z-40"
+                class="sticky top-0 bg-white border-b border-gray-200 flex items-center justify-between px-4 h-14 z-40"
             >
-                <span class="text-base font-semibold text-gray-900 flex-1"
-                    >Events</span
+                <span class="text-base font-semibold text-gray-900"
+                    >Notifications</span
                 >
-                <!-- Create event -->
-                <a href="../events/event-create.html" class="text-indigo-600">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                    </svg>
-                </a>
             </header>
 
+            <!-- Feed -->
             <main class="pb-nav">
-                <!-- Hosting section -->
-                <div class="px-4 pt-4 pb-2">
-                    <p
-                        class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3"
-                    >
-                        Hosting
-                    </p>
 
-                    <!-- Hosted event: Trail Run Saturday -->
-                    <a href="event-detail.html" class="block mb-3">
+                <div class="px-4 py-3 space-y-3">
+                    <!-- Event card 1: Trail Run Saturday -->
+                    <a href="events/event-detail.html" class="block">
                         <div
                             class="rounded-xl border border-gray-200 bg-white p-4"
                         >
@@ -57,31 +36,20 @@
                                     class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-600 text-white"
                                     >EVENT</span
                                 >
-                                <span
-                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-700"
-                                    >Hosting</span
+                                <span class="text-xs text-gray-400"
+                                    >PDX Trail Runners</span
                                 >
                                 <span class="ml-auto text-xs text-gray-400"
-                                    >Sat, Feb 28</span
+                                    >1h ago</span
                                 >
                             </div>
                             <p class="font-semibold text-gray-900 text-sm mb-1">
                                 Trail Run Saturday
                             </p>
-                            <!-- Group context -->
-                            <div class="flex items-center gap-1.5 mb-2">
-                                <div
-                                    class="w-4 h-4 rounded-full bg-orange-100 flex items-center justify-center text-xs font-semibold text-orange-700"
-                                >
-                                    TR
-                                </div>
-                                <span class="text-xs text-gray-400"
-                                    >PDX Trail Runners</span
-                                >
-                            </div>
                             <div
                                 class="flex items-center gap-1 text-xs text-gray-500 mb-1"
                             >
+                                <!-- Calendar icon -->
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -96,11 +64,12 @@
                                         d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                                     />
                                 </svg>
-                                Saturday, Feb 28 · 7:00 AM
+                                Sat, Feb 28 · 7:00 AM
                             </div>
                             <div
-                                class="flex items-center gap-1 text-xs text-gray-500 mb-3"
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-2"
                             >
+                                <!-- Map pin icon -->
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -122,44 +91,107 @@
                                 </svg>
                                 Forest Park Trailhead, Nairobi
                             </div>
-                            <!-- RSVP summary -->
-                            <div
-                                class="flex items-center gap-3 pt-3 border-t border-gray-100"
-                            >
-                                <div class="flex items-center gap-1">
-                                    <span
-                                        class="inline-block w-2 h-2 rounded-full bg-green-500"
-                                    ></span>
-                                    <span class="text-xs text-gray-500"
-                                        >14 going</span
-                                    >
-                                </div>
-                                <div class="flex items-center gap-1">
-                                    <span
-                                        class="inline-block w-2 h-2 rounded-full bg-yellow-400"
-                                    ></span>
-                                    <span class="text-xs text-gray-500"
-                                        >3 maybe</span
-                                    >
-                                </div>
+                            <div class="flex items-center gap-1">
+                                <span
+                                    class="inline-block w-2 h-2 rounded-full bg-green-500"
+                                ></span>
+                                <span class="text-xs text-gray-500"
+                                    >14 going</span
+                                >
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <!-- Divider -->
-                <div class="h-2 bg-gray-50 border-y border-gray-100"></div>
+                    <!-- Thread card 1: Best post-run recovery foods? -->
+                    <a href="groups/thread-detail.html" class="block">
+                        <div
+                            class="rounded-xl border border-gray-200 bg-white p-4"
+                        >
+                            <div class="flex items-center gap-2 mb-2">
+                                <span
+                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-gray-100 text-gray-600"
+                                    >PDX Trail Runners</span
+                                >
+                                <span class="ml-auto text-xs text-gray-400"
+                                    >2h ago</span
+                                >
+                            </div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">
+                                Best post-run recovery foods?
+                            </p>
+                            <p class="text-xs text-gray-500 line-clamp-2 mb-2">
+                                After Saturday's run I was completely wiped.
+                                Anyone have go-to recovery meals or snacks?
+                                Bonus points if they're easy to prep the night
+                                before.
+                            </p>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-400"
+                            >
+                                <!-- Chat bubble icon -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.671 1.09-.085 2.17-.207 3.238-.364 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                                    />
+                                </svg>
+                                7 replies · @saraht
+                            </div>
+                        </div>
+                    </a>
+                    <a href="groups/thread-detail.html" class="block">
+                        <div
+                            class="rounded-xl border border-gray-200 bg-white p-4"
+                        >
+                            <div class="flex items-center gap-2 mb-2">
+                                <span
+                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-gray-100 text-gray-600"
+                                    >Cascadia Fungi Network</span
+                                >
+                                <span class="ml-auto text-xs text-gray-400"
+                                    >5h ago</span
+                                >
+                            </div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">
+                                Anyone found chanterelles yet this season?
+                            </p>
+                            <p class="text-xs text-gray-500 line-clamp-2 mb-2">
+                                Went out to the coast last weekend and spotted
+                                some golden beauties coming up near the alders.
+                                Still early but hopeful.
+                            </p>
+                            <div
+                                class="flex items-center gap-1 text-xs text-gray-400"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.671 1.09-.085 2.17-.207 3.238-.364 1.584-.233 2.707-1.228 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                                    />
+                                </svg>
+                                4 replies · @mycomax
+                            </div>
+                        </div>
+                    </a>
 
-                <!-- Attending section -->
-                <div class="px-4 pt-4 pb-2">
-                    <p
-                        class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3"
-                    >
-                        Attending
-                    </p>
-
-                    <!-- Attending event 1: Spring Mushroom Walk -->
-                    <a href="event-detail.html" class="block mb-3">
+                    <!-- Event card 2: Spring Mushroom Walk -->
+                    <a href="events/event-detail.html" class="block">
                         <div
                             class="rounded-xl border border-gray-200 bg-white p-4"
                         >
@@ -168,27 +200,16 @@
                                     class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-600 text-white"
                                     >EVENT</span
                                 >
-                                <span
-                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-700"
-                                    >Going</span
+                                <span class="text-xs text-gray-400"
+                                    >Cascadia Fungi Network</span
                                 >
                                 <span class="ml-auto text-xs text-gray-400"
-                                    >Sun, Mar 9</span
+                                    >1d ago</span
                                 >
                             </div>
                             <p class="font-semibold text-gray-900 text-sm mb-1">
                                 Spring Mushroom Walk
                             </p>
-                            <div class="flex items-center gap-1.5 mb-2">
-                                <div
-                                    class="w-4 h-4 rounded-full bg-emerald-100 flex items-center justify-center text-xs font-semibold text-emerald-700"
-                                >
-                                    CF
-                                </div>
-                                <span class="text-xs text-gray-400"
-                                    >Cascadia Fungi Network</span
-                                >
-                            </div>
                             <div
                                 class="flex items-center gap-1 text-xs text-gray-500 mb-1"
                             >
@@ -206,10 +227,10 @@
                                         d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                                     />
                                 </svg>
-                                Sunday, Mar 9 · 9:00 AM
+                                Sun, Mar 2 · 9:00 AM
                             </div>
                             <div
-                                class="flex items-center gap-1 text-xs text-gray-500"
+                                class="flex items-center gap-1 text-xs text-gray-500 mb-2"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -230,84 +251,15 @@
                                         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                                     />
                                 </svg>
-                                Silver Falls State Park
+                                Hoyt Arboretum, Nairobi
                             </div>
-                        </div>
-                    </a>
-
-                    <!-- Attending event 2: Mt. Hood Day Hike -->
-                    <a href="event-detail.html" class="block mb-3">
-                        <div
-                            class="rounded-xl border border-gray-200 bg-white p-4"
-                        >
-                            <div class="flex items-center gap-2 mb-2">
+                            <div class="flex items-center gap-1">
                                 <span
-                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-600 text-white"
-                                    >EVENT</span
+                                    class="inline-block w-2 h-2 rounded-full bg-green-500"
+                                ></span>
+                                <span class="text-xs text-gray-500"
+                                    >8 going</span
                                 >
-                                <span
-                                    class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-700"
-                                    >Maybe</span
-                                >
-                                <span class="ml-auto text-xs text-gray-400"
-                                    >Sat, Mar 15</span
-                                >
-                            </div>
-                            <p class="font-semibold text-gray-900 text-sm mb-1">
-                                Mt. Hood Day Hike
-                            </p>
-                            <div class="flex items-center gap-1.5 mb-2">
-                                <div
-                                    class="w-4 h-4 rounded-full bg-orange-100 flex items-center justify-center text-xs font-semibold text-orange-700"
-                                >
-                                    TR
-                                </div>
-                                <span class="text-xs text-gray-400"
-                                    >PDX Trail Runners</span
-                                >
-                            </div>
-                            <div
-                                class="flex items-center gap-1 text-xs text-gray-500 mb-1"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-3.5 h-3.5 flex-shrink-0"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                                    />
-                                </svg>
-                                Saturday, Mar 15 · 6:30 AM
-                            </div>
-                            <div
-                                class="flex items-center gap-1 text-xs text-gray-500"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-3.5 h-3.5 flex-shrink-0"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                                    />
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                                    />
-                                </svg>
-                                Timberline Lodge Parking Lot
                             </div>
                         </div>
                     </a>
@@ -320,7 +272,7 @@
             >
                 <!-- Home -->
                 <a
-                    href="../index.html"
+                    href="index.html"
                     class="flex flex-col items-center gap-0.5 text-gray-400"
                 >
                     <svg
@@ -339,10 +291,10 @@
                     </svg>
                     <span class="text-xs">Home</span>
                 </a>
-                <!-- Events (active) -->
+                <!-- Events -->
                 <a
-                    href="index.html"
-                    class="flex flex-col items-center gap-0.5 text-indigo-600"
+                    href="events/index.html"
+                    class="flex flex-col items-center gap-0.5 text-gray-400"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -358,12 +310,12 @@
                             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                         />
                     </svg>
-                    <span class="text-xs font-medium">Events</span>
+                    <span class="text-xs">Events</span>
                 </a>
-                <!-- Notifications -->
+                <!-- Notifications (active) -->
                 <a
-                    href="../notifications.html"
-                    class="flex flex-col items-center gap-0.5 text-gray-400"
+                    href="notifications.html"
+                    class="flex flex-col items-center gap-0.5 text-indigo-600"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -379,11 +331,11 @@
                             d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
                         />
                     </svg>
-                    <span class="text-xs">Notifications</span>
+                    <span class="text-xs font-medium">Notifications</span>
                 </a>
                 <!-- Profile -->
                 <a
-                    href="../profile/own-profile.html"
+                    href="profile/own-profile.html"
                     class="flex flex-col items-center gap-0.5 text-gray-400"
                 >
                     <svg
