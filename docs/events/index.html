@@ -39,6 +39,77 @@
             </header>
 
             <main class="pb-nav">
+                <!-- Mini calendar -->
+                <div class="px-4 pt-4 pb-2">
+                    <!-- Month header -->
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-base font-bold text-gray-900">February 2026</span>
+                        <div class="flex gap-2">
+                            <button class="w-7 h-7 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+                            <button class="w-7 h-7 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Day labels -->
+                    <div class="grid grid-cols-7 mb-1">
+                        <span class="text-center text-xs text-gray-400 py-1">S</span>
+                        <span class="text-center text-xs text-gray-400 py-1">M</span>
+                        <span class="text-center text-xs text-gray-400 py-1">T</span>
+                        <span class="text-center text-xs text-gray-400 py-1">W</span>
+                        <span class="text-center text-xs text-gray-400 py-1">T</span>
+                        <span class="text-center text-xs text-gray-400 py-1">F</span>
+                        <span class="text-center text-xs text-gray-400 py-1">S</span>
+                    </div>
+                    <!-- Week rows — Feb 2026 starts on Sunday -->
+                    <div class="grid grid-cols-7">
+                        <!-- Feb 1–7 -->
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">1</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">2</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">3</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">4</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">5</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">6</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">7</button>
+                        <!-- Feb 8–14 -->
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">8</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">9</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">10</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">11</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">12</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">13</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">14</button>
+                        <!-- Feb 15–21 -->
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">15</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">16</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">17</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">18</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">19</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">20</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">21</button>
+                        <!-- Feb 22–28 -->
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">22</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">23</button>
+                        <!-- Today: 24 -->
+                        <button class="py-1.5 text-xs text-center font-bold text-white bg-indigo-600 rounded-full">24</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">25</button>
+                        <!-- 28: has event (Trail Run Saturday) -->
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">26</button>
+                        <button class="py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">27</button>
+                        <div class="flex flex-col items-center">
+                            <button class="w-full py-1.5 text-xs text-center text-gray-900 rounded-full hover:bg-gray-100">28</button>
+                            <span class="w-1 h-1 rounded-full bg-indigo-500 -mt-0.5"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-b border-gray-100 mb-2"></div>
+
                 <!-- Hosting section -->
                 <div class="px-4 pt-4 pb-2">
                     <p
